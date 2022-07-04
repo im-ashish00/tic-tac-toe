@@ -6,18 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
   </head>
   <body>
     <div class="game-board">
-      <div class="board-cell"></div>
-      <div class="board-cell"></div>
-      <div class="board-cell"></div>
-      <div class="board-cell"></div>
-      <div class="board-cell"></div>
-      <div class="board-cell"></div>
-      <div class="board-cell"></div>
-      <div class="board-cell"></div>
-      <div class="board-cell"></div>
+      <div class="board-cell" data-board-cell></div>
+      <div class="board-cell" data-board-cell></div>
+      <div class="board-cell" data-board-cell></div>
+      <div class="board-cell" data-board-cell></div>
+      <div class="board-cell" data-board-cell></div>
+      <div class="board-cell" data-board-cell></div>
+      <div class="board-cell" data-board-cell></div>
+      <div class="board-cell" data-board-cell></div>
+      <div class="board-cell" data-board-cell></div>
+    </div>
+    <div class="result-container" data-result-container>
+      <div class="winner" data-winner></div>
+      <button class="playagain-button" data-play-again-button>
+        Play Again
+      </button>
     </div>
   </body>
 </html>

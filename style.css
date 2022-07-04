@@ -35,6 +35,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 /* REMOVING BORDERS */
@@ -57,6 +58,10 @@ body {
   border-right: none;
 }
 
+.board-cell.circle,
+.board-cell.cross {
+  cursor: not-allowed;
+}
 /* BUILDING CROSS CLASS */
 .board-cell.cross::before,
 .board-cell.cross::after {
@@ -91,4 +96,38 @@ body {
   background-color: #120517;
   width: calc(var(--box-cell-size) * 0.7);
   height: calc(var(--box-cell-size) * 0.7);
+}
+
+.result-container {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: rgba(18, 5, 23, 0.9);
+  color: #fff;
+}
+
+.winner {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.playagain-button {
+  font-size: 1rem;
+  padding: 0.9rem;
+  outline: none;
+  border: 1px solid transparent;
+}
+.playagain-button:hover {
+  background-color: rgba(18, 5, 23, 0.9);
+  border: 1px solid #fff;
+  color: #fff;
+}
+.visible {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
